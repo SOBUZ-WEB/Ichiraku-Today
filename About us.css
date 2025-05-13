@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* General Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Itim', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Body and Section
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+*/
+
+.food-staff-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.food-staff-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Staff Container */
+.food-staff-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.food-staff-profile {
+    background-color: #9FE2BF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-staff-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.food-staff-profile h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.food-staff-profile p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect */
+.food-staff-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+    .food-staff-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .food-staff-container {
+        grid-template-columns: 1fr; /* 1 item per row on smaller screens */
+    }
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #9FE2BF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack the text and image in a column */
+        text-align: center;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%; /* Ensure the image fits the container */
+        margin-top: 20px;
+    }
+
+    .about-text h1 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .about-text p {
+        font-size: 14px; /* Smaller text size for mobile */
+    }
+}
+
+
+/* Footer section styling */
+.footer {
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+}

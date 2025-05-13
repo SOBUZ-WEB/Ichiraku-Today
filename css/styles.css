@@ -1,0 +1,664 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Itim', cursive;
+}
+
+
+/* p{
+    font-family: "Roboto Serif", serif;
+    font-size: x-large;
+} */
+
+/* ---------banner section-----------  */
+
+.carousel-inner .carousel-item img{
+  height: 200vh;
+  width: 100%;
+    
+
+}
+
+
+
+/* ----------- gallery section ----------------- */
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: 'Itim', cursive;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: orange;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+/* ------------- gallery section end ---------------  */
+
+
+
+
+
+/* our staffs related styles */
+.staff-card-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.staff-card {
+  border: 1px solid olive;
+  width: 300px;
+  border-radius: 15px;
+}
+.staff-card-img-container {
+  width: 100%;
+  height: 200px;
+}
+.staff-card-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.staff-card-contents {
+  padding: 20px;
+  text-align: center;
+}
+.staff-card h2 {
+  font-size: 28px;
+}
+.staff-card h4 {
+  font-weight: 600;
+}
+.staff-card-contents p {
+  margin: 10px 0;
+}
+
+/* about-company related styles */
+.about-company-container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 30px;
+  border: 1px solid olive;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: start;
+}
+.about-company-img-container {
+  width: 50%;
+  height: 100%;
+}
+.about-company-img-container img {
+  width: 100%;
+  height: 100%;
+}
+.about-company-contents {
+  width: 50%;
+}
+.about-company-contents h1 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+/* form related styles */
+.contact-card-container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid olive;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+.contact-form-img-container {
+  width: 50%;
+}
+.contact-form-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+.contact-form {
+  width: 50%;
+}
+
+.contact-form h3 {
+  text-align: center;
+  font-size: 28px;
+}
+.contact-form form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-form input,
+textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.441);
+  margin: 5px 0 10px 0;
+}
+
+.contact-form input[type="submit"] {
+  background-color: rgb(234, 181, 34);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact-information {
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 1px solid rgb(233, 178, 49);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.contact-information h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.contact-information p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact-information p span {
+  font-weight: bold;
+}
+
+/* faq related styles */
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+
+
+
+
+
+/*Foodie Registration */
+.wrapper1{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper1 .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper1 .form{
+  width: 100%;
+}
+
+.wrapper1 .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper1 .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper1 .form .inputfield .input,
+.wrapper1 .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper1 .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper1 .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper1 .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper1 .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper1 .form .inputfield .input:focus,
+.wrapper1 .form .inputfield .textarea:focus,
+.wrapper1 .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper1 .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper1 .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper1 .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper1 .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper1 .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper1 .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper1 .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper1 .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper1 .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper1 .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper1 .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper1 .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper1 .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+/*Footer Section */
+.footer-container {
+  background: #ffffff;
+  color: #4c5166;
+  padding: 45px 15px;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  margin-bottom: 45px;
+}
+
+.newsletter {
+  background: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+}
+
+.newsletter-input {
+  height: 50px;
+  border: 2px solid #cdcdcd;
+  flex: 1;
+}
+
+.newsletter-btn {
+  height: 50px;
+  padding: 0 20px;
+  background: #ffffff;
+  color: #e7b222;
+  border: 2px solid #f3b119;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+  background: #ffb30e;
+  color: #fff;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 20px;
+  color: #eba52c;
+  font-size: 22px;
+}
+
+.footer-links a,
+.footer-contact p {
+  margin-bottom: 10px;
+  display: block;
+  color: #4c5166;
+  transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact p:hover {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  /* or 267% */
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+
+  color: #ec9806;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #0085ff;
+}
+
+.footer-social a:hover {
+  color: #dddddd;
+}
+
+.footer-menu {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.f-menu a {
+  margin: 0 15px;
+  color: #4c5166;
+  text-transform: capitalize;
+}
+
+.f-menu a:hover {
+  color: #4c5166;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 30px 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+.footer-copyright a {
+  color: #4c5166;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-copyright a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+  }
+}

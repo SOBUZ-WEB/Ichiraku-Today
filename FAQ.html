@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.W Foods</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar Section start here -->  
+<nav class="navbar navbar-expand-lg bg-info-subtle">
+    <div class="container">
+    
+      <a class="navbar-brand" href="#">
+        <img src="img/icon2.png" alt="Bootstrap" width="50" height="44">
+      </a>
+        Ichiraku Ramen</a>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us.html">Contact Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="FAQ.html" target="_blank"><b>FAQ</b></a>
+          </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+    <p id="displayTime"></p>
+  </nav>
+ 
+  <!--End navbar-->
+
+<!--FAQ Section-->
+<!--FAQ Section-->
+<div class="parent">
+  <h1 class="team-h1">FAQ</h1>
+  <img src="img/Company.webp" alt="company" width="100%" height="700px">
+  <div class="child">
+          <h1 class="team-h1">Ask About reservation</h1>
+              <br>
+
+           <button class="collapsible"><i class="far fa-lightbulb"></i> How do I make a reservation?</button>
+
+        <div class="content">
+              <p>To make a reservation at a restaurant using the app, follow these simple steps:</p><br>
+
+               Step 1: Open the app and go to the home screen.<br>
+
+               Step 2: Select the restaurant where you want to dine.<br>
+
+               Step 3: Click on the 'Book now' option, and you will be asked to choose the date, the number of guests, and your preferred time.<br>
+
+              Step 4: Slide to confirm your reservation, and you're all set. Reserved!!!<br>
+
+               Note: Please check the link for more details</p><br>
+        </div>
+
+    <button class="collapsible"><i class="far fa-lightbulb"></i>How can I modify my reservation?</button>
+
+          <div class="content">
+              <p>To modify a reservation, diners can use our support service or cancel and create a new one.</p>
+          </div>
+
+              <button class="collapsible"><i class="far fa-lightbulb"></i>How can I cancel my reservation?</button>
+
+           <div class="content">
+                <p>
+                    Open the Reserveit app and go to My Reservations. Click 'Manage Reservations' and then 'Cancel' to cancel your reservation.</p>
+            </div>
+
+         <button class="collapsible"><i class="far fa-lightbulb"></i>How do I know what ingredients are in my food?</button>
+
+             <div class="content">
+                <p>In the United States, food manufacturers are required to include a list of used ingredients on all packaged foods and beverages. Ingredients are listed in descending order by weight, meaning the ingredient that weighs the most in the final product is listed first and the ingredient that weighs the least is listed last. The ingredient list is placed on the same label panel as the name and address of the manufacturer, packer or distributor, so you can always reach out to a company and ask about ingredients in their products if you have questions.t.</p>
+            </div>
+
+            <button class="collapsible"><i class="far fa-lightbulb"></i>How do I make reservations for others?</button>
+
+             <div class="content">
+                <p>To make a reservation at a restaurant using the app, follow these simple steps.<br>
+
+                   Step 1: Open the app and go to the home screen.<br>
+      
+                  Step 2: Select the restaurant where you want to dine.<br>
+      
+                  Step 3: Click on the 'Book now' option, and you will be asked to choose the date, the number of guests, and your preferred time.<br>
+      
+                  Step 4: Slide to confirm your reservation, and you're all set. Reserved!!!<br>
+      
+                  Note: If you are not gonna arrive in restaurants with your family/friends, don’t worry. Take a picture of your reservation details page where it shows reservation ID,QR code etc. and other members need to show this info to the restaurant. You are done!!! Our team will help to arrange everything for your family/friends.</p>
+             </div>
+      </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!--Footer-->
+<footer class="footer">
+  <p class="copyright">&copy; 2025 Ichiraku Ramen. Developer-Sobuz Kumar</p>
+  </footer>
+  
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function(){
+          this.classList.toggle("activefaq");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+              content.style.maxHeight = null;
+          } else{
+              content.style.maxHeight = content.scrollHeight + "px"
+          }
+      });
+  }
+</script>

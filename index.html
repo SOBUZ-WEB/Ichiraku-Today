@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.W Foods</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+    <!--External CSS link-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Fonts link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="showTime()">
+
+   
+
+<!-- Navbar Section start here -->  
+<nav class="navbar navbar-expand-lg bg-info-subtle">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon2.png" alt="Bootstrap" width="50" height="44">
+          </a>
+
+        <a class="navbar-brand" href="index.html">
+          <!-- <i class="fa fa-cutlery" aria-hidden="true"></i></i>--> 
+          Ichiraku Ramen </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_blank"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About us.html" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact us.html" target="_blank">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html" target="_blank">FAQ</a>
+              </li>
+
+        </ul>      
+      </div>
+    </div>
+    <p id="displayTime"></p>
+  </nav>
+ 
+  <!--End navbar-->
+
+
+     <!-- Slider section start  -->
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/About.png" class="d-block w-100" alt="img/Banner1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Banner2.png" class="d-block w-100" alt="img/banner1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/22.png" class="d-block w-100" alt="img/banner1.jpg">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Bannar Section End  -->
+
+
+    <!--Menu Section-->
+    <div class="menu-container">
+      <h1 class="menu-title">Food Menu</h1>
+
+     <div class="food-menu">
+           <div class="food-item">
+               <img src="img/blog-1.jpg" alt="Barbecue Chicken">
+               <div class="food-info">
+                   <ul class="menu-list">
+                   <li class="menu-item">Chicken Combo - $5.99</li>
+                   <li class="menu-item">Special Couple Combo - $6.99</li>
+                   <li class="menu-item">Christmas Combo- $8.99</li>
+                  </ul>
+               </div>
+           </div>
+
+        <div class="food-item">
+            <img src="img/blog-2.jpg" alt="Beef Curry">
+            <div class="food-info">
+                <ul class="menu-list">
+                    <li class="menu-item">Vegetable Sandwich- $5.99</li>
+                    <li class="menu-item">Kfc Chicken Sandwich- $8.99</li>
+                    <li class="menu-item">Cheese Sandwich- $6.99</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="img/blog-3.jpg" alt="Pizza">
+            <div class="food-info">
+                <ul class="menu-list">
+                    <li class="menu-item">Vegetable Kabab - $5.99</li>
+                    <li class="menu-item">Sic Kabab - $6.99</li>
+                    <li class="menu-item">Chicken Kabab- $8.99</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="img/ice cream.jpg" alt="Ice Cream">
+            <div class="food-info">
+                <ul class="menu-list">
+                    <li class="menu-item">Ice Cream - $5.99</li>
+                    <li class="menu-item">Carnival (Vanilla)  - $8.99</li>
+                    <li class="menu-item">Choco Crumb - $6.99</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Customer Review Start -->
+<section id="testimonials">
+  <!--heading--->
+  <div class="testimonial-heading">
+      <h1>Customer Review</h1>
+  </div>
+  <!--testimonials-box-container------>
+  <div class="testimonial-box-container">
+      <!--BOX-1-------------->
+      <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                  <!--img---->
+                  <div class="profile-img">
+                      <img src="img/Chef1.jpg" />
+                  </div>
+                  <!--name-and-username-->
+                  <div class="name-user">
+                      <strong>Suzune Horikita</strong>
+                      <span>@liammendes</span>
+                  </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i><!--Empty star-->
+              </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+          </div>
+      </div>
+      <!--BOX-2-------------->
+      <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                  <!--img---->
+                  <div class="profile-img">
+                      <img src="img/chef2.jpg" />
+                  </div>
+                  <!--name-and-username-->
+                  <div class="name-user">
+                      <strong>Hinata Hyuga</strong>
+                      <span>@noahwood</span>
+                  </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><!--Empty star-->
+              </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+          </div>
+      </div>
+      <!--BOX-3-------------->
+      <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                  <!--img---->
+                  <div class="profile-img">
+                      <img src="img/Chef3.png" />
+                  </div>
+                  <!--name-and-username-->
+                  <div class="name-user">
+                      <strong>Naruto Uzumaki</strong>
+                      <span>@oliverqueen</span>
+                  </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i><!--Empty star-->
+              </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+          </div>
+      </div>
+      <!--BOX-4-------------->
+      <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                  <!--img---->
+                  <div class="profile-img">
+                      <img src="img/Chef1.jpg" />
+                  </div>
+                  <!--name-and-username-->
+                  <div class="name-user">
+                      <strong>Tsunade Sanju</strong>
+                      <span>@barryallen</span>
+                  </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i><!--Empty star-->
+              </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--Customer Feedback End-->
+
+<!--Gallery Section Start-->
+<div class="gallery-container">
+  <h1 class="gallery-title">Photo Gallery</h1>
+
+  <div class="gallery">
+      <div class="gallery-item">
+          <img src="img/Gla1.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+          <img src="img/Gla2.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+          <img src="img/Gla3.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+          <img src="img/Gla4.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+          <img src="img/Gla5.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+          <img src="img/Gla6.jpg" alt="Image 6">
+      </div>
+      <div class="gallery-item">
+          <img src="img/food-menu-1.jpg" alt="Image 7">
+      </div>
+      <div class="gallery-item">
+          <img src="img/food-menu-2.jpg" alt="Image 8">
+      </div>
+      <div class="gallery-item">
+          <img src="img/food-menu-3.jpg" alt="Image 9">
+      </div>
+      <!-- Add more items as needed -->
+  </div>
+</div>
+<!-- Gallery section End -->
+
+<!--Footer-->
+<footer class="footer">
+    <p class="copyright">&copy; 2025 Ichiraku Ramen. Developer-Sobuz Kumar</p>
+    </footer>
+    
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

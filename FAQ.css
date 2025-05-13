@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Itim', cursive;
+}
+
+
+/*FAQ Start*/
+
+
+/*FAQ Start*/
+.child{
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: beige;
+}
+
+.team-h1{
+  text-align: center;
+}
+
+.collapsible{
+    background-color: #9FE2BF;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.fa-lightbulb {
+  padding-right: 1rem;
+}
+
+.activefaq, .collapsible:hover{
+    background-color: #CCCCFF;
+}
+
+.collapsible::after{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.activefaq::after{
+    content: '\2212';
+}
+
+.content{
+    padding: 0 18px;
+    font-size: 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+/*faq End*/
+
+
+  /* Footer section styling */
+  .footer {
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+  }
+  
+  .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
